@@ -20,6 +20,26 @@
             justify-content: center;
         }
 
+        nav {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 0.9rem;
+        }
+
+        nav a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        nav a:hover {
+            border-color: #333;
+            opacity: 0.7;
+        }
+
         main {
             flex-grow: 1;
             display: flex;
@@ -62,6 +82,10 @@
 </head>
 
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Venture Portfolio</a>
+    </nav>
     <main>
         <p>Bridging code, capital, and conviction — from software to startups.</p>
         <p>BSCS @ Columbia, Venture Scout @ <a href="http://www.legendary.vc">Legendary</a>, 1 failed startup w. MVP.
@@ -69,7 +93,8 @@
             <a href="http://www.scripps.edu">Scripps Research</a>, <a href="http://www.cavisense.com">CaviSense</a>, and
             <a href="http://www.xenonhealth.com">Xenon Health</a>. You can reach me on <a
                 href="http://www.linkedin.com/in/zihenghuang4">LinkedIn</a> or at <a
-                href="mailto:zh2556@columbia.edu">zh2556@columbia.edu</a>. Remember - you can't buy back yesterday.
+                href="mailto:everett.huang@columbia.edu">everett.huang@columbia.edu</a>. Remember - you can't buy back
+            yesterday.
         </p>
         <p class="signature">– Everett Z. Huang</p>
     </main>
@@ -79,9 +104,7 @@
             <a href="">H</a>
             <a href="">U</a>
             <a href="">S</a>
-            <a href="">T</a>
             <a href="">L</a>
-            <a href="">E</a>
         </div>
     </footer>
 </body>
