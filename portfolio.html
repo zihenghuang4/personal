@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Benjamin Zweig</title>
+    <title>Portfolio | Everett Huang</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -66,11 +66,23 @@
         .company h2 {
             font-size: 1.1rem;
             margin: 0 0 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .company h2 .stage {
+            font-size: 0.75rem;
+            font-weight: normal;
+            color: #888;
+            padding: 0.15rem 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 3px;
         }
 
         .company p {
             font-size: 0.9rem;
-            margin: 0 0 1rem;
+            margin: 0;
             color: #666;
         }
 
@@ -79,6 +91,12 @@
             color: #999;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .company h2 a {
+            text-decoration: none;
+            color: inherit;
         }
 
         .footer-nav {
@@ -106,73 +124,106 @@
     <header>
         <h1>Venture Portfolio</h1>
         <p class="intro">Companies I've scouted at Legendary that represent promising opportunities in emerging
-            technologies and innovative business models</p>
+            technologies and innovative business models.</p>
     </header>
 
     <div class="portfolio-grid">
         <div class="company">
             <div class="category">Consumer & Retail</div>
-            <h2>NearSt</h2>
+            <h2>
+                <a href="http://www.near.st">NearSt</a>
+                <span class="stage">A</span>
+            </h2>
             <p>Connecting in-store inventory to the web for SMBs.</p>
         </div>
 
         <div class="company">
             <div class="category">Med Tech</div>
-            <h2>Quantivly</h2>
+            <h2>
+                <a href="http://www.quantivly.com">Quantivly</a>
+                <span class="stage">A</span>
+            </h2>
             <p>Building the air traffic controller for medical imaging operations.</p>
         </div>
 
         <div class="company">
             <div class="category">Healthcare</div>
-            <h2>YouShift</h2>
-            <p>AI-powered hospital shit scheduling (Rippling for healthcare). </p>
+            <h2>
+                <a href="http://www.you-shift.com">YouShift</a>
+                <span class="stage">Seed</span>
+            </h2>
+            <p>AI-powered hospital shit scheduling (Rippling for healthcare). YC W25.</p>
         </div>
 
         <div class="company">
             <div class="category">Hardware</div>
-            <h2>Quarter20</h2>
+            <h2>
+                <a href="http://www.buildquarter20.com">Quarter20</a>
+                <span class="stage">Seed</span>
+            </h2>
             <p>CAD-connected wiki for hardware teams. </p>
         </div>
 
         <div class="company">
             <div class="category">Commercial Real Estate</div>
-            <h2>Caltana</h2>
-            <p>AI pricing for RFP processes in CRE</p>
+            <h2>
+                <a href="http://www.caltana.com">Caltana</a>
+                <span class="stage">Pre-Seed</span>
+            </h2>
+            <p>AI pricing for Request for Proposal (RFP) processes in commercial real estate.</p>
         </div>
 
         <div class="company">
             <div class="category">Legal</div>
-            <h2>Consulta</h2>
+            <h2>
+                <a href="http://www.consultaimmigration.com">Consulta</a>
+                <span class="stage">Seed</span>
+            </h2>
             <p>AI-powered Turbotax for immigration.</p>
         </div>
 
         <div class="company">
             <div class="category">AI & Security</div>
-            <h2>Swif</h2>
+            <h2>
+                <a href="http://www.swif.ai">Swif</a>
+                <span class="stage">Seed</span>
+            </h2>
             <p>AI-powered device compliance and endpoint management.</p>
         </div>
 
         <div class="company">
             <div class="category">Manufacturing</div>
-            <h2>Rotender</h2>
+            <h2>
+                <a href="http://www.rotender.com">Rotender</a>
+                <span class="stage">Seed</span>
+            </h2>
             <p>Robot bartender - beer and other alcoholic beverage fountain.</p>
         </div>
 
         <div class="company">
             <div class="category">Hardware</div>
-            <h2>Bloom</h2>
+            <h2>
+                <a href="http://www.togetherwebloom.us">Bloom</a>
+                <span class="stage">Seed</span>
+            </h2>
             <p>Hardware ops platform - build, ship, and service products via vetted network of service providers.</p>
         </div>
 
         <div class="company">
             <div class="category">AI</div>
-            <h2>Ceramic</h2>
+            <h2>
+                <a href="http://www.ceramic.ai">Ceramic</a>
+                <span class="stage">Seed</span>
+            </h2>
             <p>Faster & more efficient AI infrastructure with very long-context training. </p>
         </div>
 
         <div class="company">
             <div class="category">Sports</div>
-            <h2>Winible</h2>
+            <h2>
+                <a href="http://www.winible.com">Winible</a>
+                <span class="stage">Seed</span>
+            </h2>
             <p>Onlyfans for sports betting - launch, manage, and scale your capping businesss.</p>
         </div>
     </div>
