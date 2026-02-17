@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Everett Huang</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #333;
+        }
+
+        nav {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 0.9rem;
+        }
+
+        nav a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        nav a:hover {
+            border-color: #333;
+            opacity: 0.7;
+        }
+
+        header {
+            margin: 4rem 0 3rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-bottom: 1rem;
+        }
+
+        .intro {
+            font-size: 1rem;
+            max-width: 600px;
+            margin-bottom: 3rem;
+        }
+
+        .projects-container {
+            margin-top: 2rem;
+        }
+
+        .project {
+            padding: 2rem 0;
+            border-top: 1px solid #eee;
+        }
+
+        .project:first-child {
+            border-top: none;
+        }
+
+        .project-header {
+            margin-bottom: 1rem;
+        }
+
+        .project-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0 0 0.25rem;
+        }
+
+        .project-title a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #ddd;
+            transition: border-color 0.2s ease, opacity 0.2s ease;
+        }
+
+        .project-title a:hover {
+            border-color: #333;
+            opacity: 0.7;
+        }
+
+        .project-meta {
+            font-size: 0.85rem;
+            color: #999;
+            margin: 0;
+        }
+
+        .project-meta .tag {
+            color: #666;
+        }
+
+        .project-meta .separator {
+            margin: 0 0.5rem;
+            color: #ddd;
+        }
+
+        .project-meta .date {
+            color: #999;
+        }
+
+        .project-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0.75rem 0 1.25rem;
+            line-height: 1.5;
+        }
+
+        .features-label {
+            font-size: 0.8rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .features li {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+            padding-left: 1.25rem;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .features li:before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #ccc;
+        }
+
+        .category-dots {
+            display: flex;
+            gap: 0.4rem;
+            margin-top: 1.25rem;
+            align-items: center;
+        }
+
+        .dot-label {
+            font-size: 0.8rem;
+            color: #bbb;
+            margin-right: 0.25rem;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            title: attr(data-label);
+            position: relative;
+            cursor: default;
+        }
+
+        .dot:hover::after {
+            content: attr(data-label);
+            position: absolute;
+            bottom: 140%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        .dot-personal-dev {
+            background: #7B9CDA;
+        }
+
+        .dot-work {
+            background: #72B582;
+        }
+
+        .dot-personal-proj {
+            background: #D4896A;
+        }
+
+        .dot-chores {
+            background: #C8A96E;
+        }
+
+        .dot-wasted {
+            background: #C0768C;
+        }
+
+        .footer-nav {
+            margin-top: 5rem;
+            text-align: center;
+            font-family: monospace;
+            font-size: 1.2rem;
+            letter-spacing: 0.5em;
+        }
+
+        .footer-nav a {
+            margin: 0 0.5rem;
+            text-decoration: none;
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1.5rem;
+            }
+
+            nav {
+                position: static;
+                margin-bottom: 2rem;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="projects.html">Projects</a>
+        <a href="portfolio.html">Venture Portfolio</a>
+    </nav>
+
+    <header>
+        <h1>Projects</h1>
+        <p class="intro">
+            Things I've built — mostly tools to understand myself better and work more intentionally.
+        </p>
+    </header>
+
+    <div class="projects-container">
+
+        <div class="project">
+            <div class="project-header">
+                <h2 class="project-title">
+                    <a href="https://github.com/zihenghuang4/calendar-tracker" target="_blank" rel="noopener">Calendar
+                        Tracker</a>
+                </h2>
+                <p class="project-meta">
+                    <span class="tag">Productivity · Time Tracking</span>
+                    <span class="separator">·</span>
+                    <span class="date">2026</span>
+                </p>
+            </div>
+            <p class="project-description">
+                I schedule every minute of my waking day using time blocks on Notion Calendar, synced with Google
+                Calendar.
+                This tool integrates with that calendar, breaks down how I spend my time across five categories, and
+                tracks
+                my deep work hours — inspired by Cal Newport's <em>Deep Work</em>. The goal is to gradually push deep
+                work
+                toward an optimal daily level.
+            </p>
+            <div class="features-label">What it does</div>
+            <ul class="features">
+                <li>Connects to Google Calendar and reads time block events by color</li>
+                <li>Categorizes time into five buckets: personal development, work, personal projects, chores &amp;
+                    meals, and wasted time</li>
+                <li>Surfaces total deep work hours (work + personal projects) per day and week</li>
+                <li>Tracks trends over time to help nudge deep work toward a personal target</li>
+            </ul>
+            <div class="category-dots">
+                <span class="dot-label">Categories</span>
+                <span class="dot dot-personal-dev" data-label="Personal Development"></span>
+                <span class="dot dot-work" data-label="Work"></span>
+                <span class="dot dot-personal-proj" data-label="Personal Projects"></span>
+                <span class="dot dot-chores" data-label="Chores &amp; Meals"></span>
+                <span class="dot dot-wasted" data-label="Wasted Time"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-nav">
+            <a href="">E</a>
+            <a href="">D</a>
+            <a href="">G</a>
+            <a href="">E</a>
+        </div>
+    </footer>
+</body>
+
+</html>
